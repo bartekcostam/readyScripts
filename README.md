@@ -1,4 +1,4 @@
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.computerhope.com%2Funix%2Funohup.htm&psig=AOvVaw3ht7eSOihgnBR3fuJAwN9b&ust=1686854764993000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjBn-q1w_8CFQAAAAAdAAAAABAE"><img>
+<img src="https://cdn.pixabay.com/photo/2013/07/12/15/30/penguin-149971_1280.png"><img>
 
 # Ubuntu Server Setup Scripts
 
