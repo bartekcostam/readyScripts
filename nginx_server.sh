@@ -1,9 +1,34 @@
 #!/bin/bash
 
-# Install nginx
-sudo apt-get install nginx -y
+# Aktualizacja repozytoriów
+sudo apt-get update
 
-# Create a new user
+# Instalacja nginx
+sudo apt-get install -y nginx
 
-sudo adduser --system --no-create-home --disabled-login --disabled-password --group nginx
+# Utworzenie pliku konfiguracyjnego dla nginx
+sudo bash -c 'cat > /etc/nginx/sites-available/reverse-proxy.conf << EOL
+server {
+    listen 80;
 
+    location /test {
+        proxy_pass http://localhost:3000;
+    }
+
+    location /app {
+        proxy_pass http://localhost:8000;
+    }
+}
+EOL'
+
+# Usunięcie domyślnej konfiguracji
+sudo rm /etc/nginx/sites-enabled/default
+
+# Aktywacja nowej konfiguracji
+sudo ln -s /etc/nginx/sites-available/reverse-proxy.conf /etc/nginx/sites-enabled/
+
+# Sprawdzenie konfiguracji nginx
+sudo nginx -t
+
+# Restart nginx
+sudo systemctl restart nginx
