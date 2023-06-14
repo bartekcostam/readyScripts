@@ -1,3 +1,5 @@
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.computerhope.com%2Funix%2Funohup.htm&psig=AOvVaw3ht7eSOihgnBR3fuJAwN9b&ust=1686854764993000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIjBn-q1w_8CFQAAAAAdAAAAABAE"><img>
+
 # Ubuntu Server Setup Scripts
 
 This repository contains a set of scripts to set up Apache, MySQL, and Nginx on an Ubuntu server. The scripts are designed to be run on a fresh Ubuntu server and will install and configure the necessary software.
