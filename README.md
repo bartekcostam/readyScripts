@@ -1,2 +1,2 @@
 # readyScripts
-This repository will contain 
+This repository will contain scripts for automation
