@@ -11,7 +11,7 @@ sudo bash -c 'cat > /etc/nginx/sites-available/reverse-proxy.conf << EOL
 server {
     listen 80;
 
-    location /test {
+    location /{
         proxy_pass http://localhost:3000;
     }
 
